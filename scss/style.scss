@@ -291,7 +291,7 @@ html{
   
   .nav-uni-logo{
       z-index: 150;
-      background-image: url("/img/navbar/pauLogo24.png");
+      background-image: url("/imgs/navbar/pauLogo24.png");
       background-repeat: no-repeat;
       background-color: #fff;
       background-position-x: center;
@@ -382,6 +382,17 @@ html{
     box-shadow: 1px 1px 15px $gri-yazi;
 }
 
+.menu-cerceve{
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    i{
+        font-size: 23px;       
+        display: block;
+        text-align:center;
+        color: #424242;
+    }
+}
 
 .menu-cerceve p{
     
@@ -397,14 +408,9 @@ html{
 
 
 
-.menu-cerceve img {
-    position: relative;
-    top: 3px;
-    display: flex;
-    margin: auto;
-    width:  25px;
-    height: 25px;
-}
+
+
+
 
 
 // İÇERİK :
@@ -769,13 +775,13 @@ border-top-right-radius: 7px;
             display: flex;
             justify-content: center;
             background-size:100% 100%;
-            background-image: url(../img/footer/uni-logo.png);
+            background-image: url(../imgs/footer/uni-logo.png);
             width: 75px;
             height: 75px;
             margin: -42px auto 15px;
     }
     
-        background-image: url(../img/footer/9f481shutterstock_148710701-geometrik-desen-vektorel.png);
+        background-image: url(../imgs/footer/9f481shutterstock_148710701-geometrik-desen-vektorel.png);
 
 
         background-position: center;
