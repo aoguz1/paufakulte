@@ -1,6 +1,3 @@
-   
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,7 +28,7 @@
                             <div class="nav-ust  clear row">
                                 <div class="nav-ust-sol col-md-9">
                                     <a href=""> <!-- domain ekle -->
-                                        <img class="fakulte-logo" src="img/navbar/fakulte-logo.png" alt="">
+                                        <img class="fakulte-logo" src="imgs/navbar/fakulte-logo.png" alt="">
                                     </a>
                                     <div class="nav-yazi">
                                         <span class="nav-uni-isim">
@@ -67,7 +64,7 @@
                                     </div> 
                     
                                     <a href="">                    
-                                        <img src="img/navbar/bayrak.png" alt="English">
+                                        <img src="imgs/navbar/bayrak.png" alt="English">
                                         <span>English</span>                    
                                     </a>
                                 </div>
