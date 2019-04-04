@@ -1,0 +1,937 @@
+   // DEĞİŞKENLER
+            $semibold: 600;
+            $regular:400;
+            $semilight:300;
+            $light:100;
+
+
+    // Renkler:
+       $uni-logo-mavi:#004684;
+       $uni-logo-acikMavi:#007CC2;
+       $gri-yazi:#424242;
+       $list-style-acikMavi:#369EB7;
+       $menu-cercece:#707070;
+   
+   // GLOBAL  
+   *{
+       list-style: none;
+   } 
+    
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-weight: $regular;
+    color: #424242;
+    
+}
+.ortala{
+    margin: auto;
+    text-align: center;
+}
+// NAVBAR
+
+
+    // üst logolu navbar
+.nav-padding{
+    padding-left: 7%;
+    padding-right: 3%;
+}
+
+.nav-ust{
+    
+    padding: 1rem 0;
+    
+}
+
+.nav-ust-sol{
+    float: left;
+}
+
+.nav-ust-sol{
+    
+    .nav-yazi{
+        position: relative;
+        top: 12%;
+        float: left;
+        
+    }
+    
+    .nav-uni-isim{
+        font-size: 180%;
+        padding-left: 58px;
+        font-weight: $semibold;
+        
+    }
+    .nav-fakulte-isim{
+        font-size: 1.6rem;
+        padding-left: 45px;
+        color: #004684;
+    }
+}
+.fakulte-logo{
+    width: 46px;
+    height: auto;
+    float: left;
+}
+
+
+.nav-ust-sag{
+    .ust-bilgi{
+        overflow: auto;
+        padding: 10px 0px; 
+        
+        a{
+            box-sizing: content-box;            
+            margin-left: 10px;
+            font-size: 1.4rem;
+            color: $uni-logo-mavi;
+            overflow: auto;
+            transition: padding 300ms;
+
+            i{
+                font-size: 2.3rem;
+                
+            }
+
+           span{
+               font-size: 1.4rem;
+           }
+            
+        }
+        a:hover{
+            box-sizing: content-box;
+            background-color:$uni-logo-acikMavi;
+            color:#fff;
+            text-decoration: none;
+            padding: 0px 20px;
+            border-radius: 10px;
+
+            i:hover{
+              color: #fff;  
+            }
+
+
+            span:hover{
+                color: #fff;
+            }
+        }
+        
+    }
+}
+
+.nav-ust-sag{
+    float: right;
+    a{
+        float: right;;
+        span{
+            
+            font-size: 1.2rem;
+            color: $uni-logo-mavi;
+        }
+    }
+}
+    // alt logolu navbar
+   
+
+    .cerceve{
+        box-shadow: 3px 3px 6px 3px rgb(184, 183, 183); 
+                                                                                                
+        
+    }
+   
+   // yeni navbar
+
+   .navbar-nav{
+  
+
+
+    li{
+        padding: 5px 0px;
+        font-size: 15px;
+        font-weight: 600;
+        color:$uni-logo-mavi;
+      
+      
+           
+  
+           a{
+               display: block;
+              color: #424242;
+           }
+  
+          a:hover{
+              text-decoration: none;
+          
+  
+          }
+    }
+  
+  }
+  
+  
+   
+  .denee{
+      display: flex !important;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+  }
+  
+  
+  .nav-item{
+  
+  
+     
+  
+      >a{
+          
+          color: $uni-logo-mavi !important;
+          font-size: 15px;
+          
+           transition: 0.27s ease;                   
+           border-bottom: 4px solid #ffffff;
+  
+  
+  
+           &:hover{
+              text-decoration: none;                   
+              border-bottom: 4px solid $uni-logo-mavi;                                   
+              padding: 3px 0; 
+           }
+      }
+  
+  
+     
+  }
+  
+  
+  .dropdown-item{
+  
+     
+  
+      &:hover{
+          color: $gri-yazi !important;
+      }
+  }
+  
+  .dropdown-menu{
+      li{
+          padding-left: 8px;
+          padding-right:8px; 
+          color: #424242;
+          transition: background-color 350ms;
+          
+          &:hover{
+              background-color: #cecece !important;
+            
+          }
+          a{
+              
+              
+              font-size: 14px;
+              color: $gri-yazi;
+  
+              &:hover{
+                  color:$gri-yazi !important;
+              }
+             
+          }
+      }
+  }
+  
+  .dropdown-menu{
+      .dropdown-item:hover{
+          a{
+              color: $gri-yazi;
+          }
+  
+  
+        
+      }
+  }
+  
+  // RESPONSİVE style //
+  
+  
+  
+  
+  .responsive-navbar{
+      display: none;
+      background-color: #052d50;
+      height: 50px;
+      .container
+      {
+          .row{
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              padding: 0px 10px;
+              line-height: 50px;
+  
+              .nav-fakulte-isim{
+                  font-weight: 500;
+                  font-size: 1.5rem;
+                  color: #fff;
+              }
+          }
+      }
+  }
+  
+  .menu-rpnbs-icon{
+      color: #fff;
+      &:hover{
+          color: #fff;
+          text-decoration: none;
+      }
+  }
+  
+  
+  .nav-uni-logo{
+      z-index: 150;
+      background-image: url("/img/navbar/pauLogo24.png");
+      background-repeat: no-repeat;
+      background-color: #fff;
+      background-position-x: center;
+      background-position-y: center;
+      height: 34px;
+      width: 34px;
+      color: #424242;
+      border-radius: 17px;
+  }
+  
+  
+  #navbar-alt-menu{
+    background-color: #fff;
+    }
+    
+    #alt-navbar{
+        background-color: #fff;
+       box-shadow:  3px 3px 6px 3px #b8b7b7;
+    }
+
+
+ 
+
+
+ 
+
+
+
+// SLİDER
+
+#slider{
+  
+     padding: 18px 0px;
+}
+.carousel-inner{
+    box-shadow: 5px 8px 10px 0 rgba(0, 0, 0, 0.16);
+    border-radius:5px; 
+}
+
+//MENU
+
+
+#menu {
+    .container
+    {
+        
+            .col-md-2{
+                max-width: 14.666667%;
+            }
+            .col-xs-4{
+                max-width: 22.666667%;
+            }
+        
+    }
+}
+
+
+
+
+
+
+.menu-ortala{
+    display: flex;
+    justify-content: center;
+}
+.menu-cerceve{
+    border: 1px solid #70707054;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 7px;
+    transition: box-shadow 450ms;
+           
+}
+
+
+    .menu-ortala{
+        .menu-cerceve{
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+
+
+
+
+.menu-cerceve:hover{
+    box-shadow: 1px 1px 15px $gri-yazi;
+}
+
+
+.menu-cerceve p{
+    
+    font-size: 1.1rem;
+    justify-content: center;
+    text-align: center;
+    margin:auto;
+    position: relative;
+    top: 8px;
+    padding-bottom: 10px;    
+    color: $gri-yazi;
+}
+
+
+
+.menu-cerceve img {
+    position: relative;
+    top: 3px;
+    display: flex;
+    margin: auto;
+    width:  25px;
+    height: 25px;
+}
+
+
+// İÇERİK :
+
+#icerik{
+    margin: 20px 30px;
+}
+
+
+
+.etkinlik-baslik-border{
+    border-right: 1px solid #7070708c;
+    border-bottom: 1px solid #7070708c;
+    //height: 500px;  // BURAYI YAPTIKTAN SONRA DEĞİŞTİR.
+    height: 45px;
+    border-top-left-radius: 7px;
+}
+
+.duyurular-baslik-border{
+    border-bottom: 1px solid #7070708c;
+    border-right: 1px solid #7070708c;
+    height: 45px;
+}
+.haberler-baslik-border{
+border-bottom: 1px solid #7070708c;
+height: 45px;
+border-top-right-radius: 7px;
+
+}
+
+.icerik-cerceve{  
+    border: 1px solid #7070708c;
+    border-radius: 7px;
+    height: auto;
+    
+    
+}
+
+
+
+.container{
+    .row{
+        .col-md-3,.col-md-6{
+            padding: 0;
+
+
+            .icerik-baslik{         
+                height: 45px;
+                background-color: #f5f5f5;
+                                
+                i{
+                    margin-left: 10px;
+                    margin-right: 5px;
+                 
+                    
+                }
+                .nav-log{
+                    font-size: 2em;
+                    color: $gri-yazi;
+                }
+
+            }
+            
+        }    
+    }
+}
+
+
+.icerik-baslik{
+    border-bottom: 1px solid #7070708c;
+ 
+    
+
+    span{
+        font-size: 14px;
+        font-weight: $semibold;
+        line-height: 45px;
+    }
+}
+
+.icerik-button:hover{
+    color:#fff;
+    background-color: #f5f5f5;
+    text-decoration: none;
+    box-shadow:1px 1px 8px $gri-yazi;
+    
+    span{
+        color:#000;
+        text-decoration: none;
+    }
+}
+
+.bright-none{
+    border-right: none;
+}
+
+
+
+
+
+.icerik-button{
+    display: block;
+    width: 90%;
+    border: 1px solid #7070708c;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 5px 0px;
+    text-align: justify;
+    margin-bottom: 10px;
+    transition:  box-shadow 300ms , background-color 150ms;
+    align-content: center;
+    margin: 10px auto;
+    
+
+    span{
+        text-decoration: none;
+        font-size: 1.2rem;
+        padding-left: 5%;
+        font-weight: $regular;
+        color: #424242;
+    }
+        
+
+
+    
+   
+
+}
+
+    // etkinlikler
+
+.etkinlikler{
+    //border-right: 1px solid #7070708c;
+    height: auto;
+    clear: both;
+    overflow: hidden;
+
+    ul{
+        padding: 0;
+
+        .etkinlik-birim{
+            padding-top: 10px;
+            overflow: auto;        
+            .renk{
+                margin-left: 10px;
+                width: 7px;
+                height: 59px;
+                float: left;
+                background-color: #369EB7;
+                overflow: auto;
+        
+            }
+        }
+        li{
+            overflow: hidden;
+            
+           .tarih{
+
+               
+               padding-left: 5px;
+               float: left;
+               font-size: 20px;
+               font-weight: $semibold;
+               text-transform: uppercase;
+               text-align: center;
+
+                &::before{
+                    content: "19'";
+                    font-size: 16px;
+                    position: absolute;
+                    left: 70px;
+                    color: #004684;
+                    margin: auto auto;
+                    opacity: 0.6;
+                    
+                    
+                }
+
+               .tarih-gun{
+                margin: 0;
+               }               
+           }
+
+           .aciklama-icerik{     
+               overflow: auto;      
+                padding-left: 10px;
+                text-align: center;
+                
+            .aciklama{
+                color: $gri-yazi;
+                font-weight: $semibold;
+                font-size: 1.3rem;
+                overflow-wrap: break-word;
+            }
+           
+            span{
+                display: block;
+                padding-top: 5px;
+                font-size: 1.1rem;
+                overflow-wrap: break-word;
+            }
+          }   
+        }
+    }
+}
+
+.rd-top-left{
+    border-top-left-radius: 7px;
+}
+
+//duyurular
+
+
+.col-md-6{
+    .icerik-baslik{
+        border-right: 1px solid #7070708c;
+        border-left: 1px solid #7070708c;
+
+    }
+    .icerik-bolum{
+        .duyurular{
+            overflow: hidden;
+            border-right: 1px solid #7070708c;
+            border-left: 1px solid #7070708c;
+            height: auto;
+
+            ul{
+                padding: 0;
+
+                li{
+                    padding-top: 10px;
+                    margin-left: 10px;
+
+                    .duyuru-simge{
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 50%;
+                        background-color: $uni-logo-mavi;
+                        float: left;
+                        position: relative;
+                        top: 5px;
+                        
+                    }
+
+                    .duyuruContent{  
+
+                    overflow: auto;
+                    padding-left: 10px;
+                        display: block;                 
+
+                    a{
+                        text-decoration-color: #3b3b3b;
+                        color: $gri-yazi;
+                        font-size: 1.35rem;
+                        font-weight: $semibold;                       
+                       
+                    }
+
+                    p{
+                        i{
+                            display: block;
+                            padding-top: 2px;
+
+                        }
+                    }
+                 }
+               }
+            }
+        }
+    }
+}
+
+// haberler
+
+.rd-top-right{
+    border-top-right-radius: 7px;
+}
+
+
+#haberler{
+    .rd-top-right{
+        .row{           
+            margin: 0;
+            .col-8{
+                padding: 0;
+            }
+            .col-4{
+                text-align: center;
+                padding: 0;
+
+                .haber-button{
+                    line-height: 45px;
+
+                    a{
+                     font-size: 12px;  
+                     font-weight: 300;                      
+                     text-decoration: none;
+
+                     i{
+                        
+                     }
+                    }
+
+                }
+            }
+        }
+    }
+
+
+    .icerik-bolum{
+        .haber-item-icerik{
+            padding: 6px;
+            text-align: center;
+
+            a{
+                width: 260px;
+                color: $gri-yazi;
+                text-decoration-color: #3b3b3b;
+                text-align: center;
+
+
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            
+            .haber-item-yazi{
+
+
+                p{
+                    padding: 5px 10px;
+                    text-align: center;
+                    font-size: 1.3em;
+                    font-weight: $semibold;
+                    
+                    text-decoration-color: #3b3b3b;
+                    
+                }               
+                
+            }
+        } 
+        
+    
+            
+       }
+    }
+}
+
+
+
+// FOOTER
+
+
+#footer{
+        
+        margin-top: 60px;
+        border-top: 5px solid $uni-logo-mavi;
+        background-color: rgba(255, 251, 251, 0.4);
+    
+    #footer-logo{
+            
+            display: flex;
+            justify-content: center;
+            background-size:100% 100%;
+            background-image: url(../img/footer/uni-logo.png);
+            width: 75px;
+            height: 75px;
+            margin: -42px auto 15px;
+    }
+    
+        background-image: url(../img/footer/9f481shutterstock_148710701-geometrik-desen-vektorel.png);
+
+
+        background-position: center;
+        background-size: 250px 250px;
+        
+        
+        
+ 
+            
+}
+    
+.container{
+    
+    .row{
+        
+        .col-md-3{
+            text-align: left;
+
+            .footer-bolum-baslik{
+                
+                text-transform: uppercase;
+                font-weight: $semibold;
+                font-size: 1.5em;
+                color: $uni-logo-mavi;
+                
+            }
+
+            .footer-alt-item{
+                ul{
+                    padding: 0;
+                    
+                    li{
+                        padding: 4px 0px;
+                        a{
+                            font-size: 1.25em;
+                            color: $gri-yazi;
+                        }
+
+                        
+                    }
+                }
+            }
+        }
+        .col-xs-6{
+            max-width: 50%;
+        }
+
+    }
+
+    .ft-line{
+        margin: 30px 0px;
+        border-top: 3px solid #393535;
+        border-radius: 5px;
+    }
+
+    .ft-bottom-info{
+        font-weight: bold;
+        font-size:1.2em;
+        text-align: center;
+        margin: 0;
+        padding-bottom: 8px;
+
+        p{
+            a{
+                text-decoration: none;
+                color:#212529;                
+            }
+            a:hover{
+                opacity: 0.7;
+            }
+        }
+    }
+}
+
+
+
+#footer-icerik{
+    
+        .col-md-3,.col-xs-6{
+            padding: 0px 5px;
+        }
+    
+}
+
+// sosyal medya 
+
+
+#sosyal-medya{
+ 
+    
+    
+       
+        a{
+            display:flex; 
+        justify-content:space-between;
+         align-items:center;
+            margin: auto;
+            text-align:center;
+            font-size: 3.7em;
+            color: $gri-yazi;
+            color: $gri-yazi;
+           transition: 270ms ease;
+        }
+        .icon-fb:hover{
+            text-decoration: none;
+            color:#4267B2;
+        }
+        .icon-insta:hover{
+            text-decoration: none;
+            color:#E901AC;
+        }
+        .icon-tw:hover{
+            text-decoration: none;
+            color: #1DA1F2;
+        }
+        .icon-ytb:hover{
+            text-decoration: none;
+            color:#FF0000;
+        }
+        
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+    
+
+    
+
+
+
+
+
+
+

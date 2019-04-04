@@ -1,0 +1,29 @@
+@media screen and (max-width: 768px) {
+  #ana-navbar {
+    display: none; }
+
+  #nav-responsive {
+    display: block; }
+
+  .duyurular {
+    border-left: none !important;
+    border-right: none !important; }
+
+  .icerik-baslik {
+    border-left: none !important;
+    border-right: none !important; }
+
+  .rd-top-left {
+    border-radius: 7px 7px 0px 0px; }
+
+  #slider {
+    padding: 0px;
+    padding-bottom: 18px !important; }
+
+  .carousel-inner {
+    border-radius: 0px; }
+
+  .ft-bottom-info p {
+    font-size: 1.1rem; } }
+
+/*# sourceMappingURL=responsive.css.map */
