@@ -13,6 +13,18 @@
     <link rel="stylesheet" href="styles/jquery.mmenu.css">
     <link rel="stylesheet" href="styles/navbar.css">
     <link rel="stylesheet" href="styles/responsive.css">
+
+
+    <!--scripts-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/jquery.mmenu.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/jquery.scrollUp.js"></script>
+
+    
 </head>
 <body>
 
@@ -21,9 +33,9 @@
 
         <div class="my-header">
 
-            <div id="ana-navbar">
-                <nav>
-  
+            
+               
+                    <div id="ust-rpnsb-navbar">
                         <div class=" nav-padding container">
                             <div class="nav-ust  clear row">
                                 <div class="nav-ust-sol col-md-9">
@@ -71,12 +83,17 @@
                             </div>   
                             </div>
                         </div>
-                    
+                    </div>
                        
                        
-                    </nav>
-                    <nav id="alt-navbar" class="sticky-top">
-                            <div class="navbar navbar-expand-sm" role="navigation">
+                   
+
+                
+
+                    <div id="alt-rpnsb-navbar" class="alt-navbar sticky-top">
+
+                      
+                            <div  class="navbar navbar-expand-sm" role="navigation">
                     
                     
                                     <div  class="collapse navbar-collapse" id="navbarCollapse">
@@ -154,9 +171,10 @@
                                        
                                     </div>
                                 </div>
-                            </nav>
-            </div>
 
+                          
+                    </div>
+            
 
              <div id="nav-responsive" class="responsive-navbar">
                    <div class="container">
@@ -176,7 +194,7 @@
                                 
                             </div>
 
-        </div>
+        
         <div class="my-content">
                 <section id="slider">
 
@@ -554,9 +572,9 @@
                 <footer class="desen" id="footer">
     
         
-                        <div id="footer-logo">
+                        <img id="footer-logo" src="imgs/footer/uni-logo.png" alt="">
                             
-                        </div>
+                        
                         
                         <div class="container">
                             <div id="footer-icerik" class="row">
@@ -818,10 +836,11 @@
                     
                         
                     </div>
-                    
+                </div>
                     </footer>
                     
-
+                    <a id="scrollUp" href="#top" title="Scroll to top" "></a>
+                  
         </div>
 
 
@@ -850,6 +869,10 @@
                 </ul>
             </nav>
 
+
+
+           
+
     </div>
     
 
@@ -859,13 +882,7 @@
 
 
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="js/owl.carousel.js"></script>
-    <script src="js/jquery.mmenu.js"></script>
-    <script src="js/navbar.js"></script>
     <script>
     $('.owl-carousel').owlCarousel({
     loop:true,
@@ -962,6 +979,43 @@ $(window).resize(function() {
 
 </script>
 
+<script>
+
+
+$(function () {
+    $.scrollUp();
+});
+
+
+
+
+
+
+
+</script>
+
+
+<script>
+$(function () {
+    $.scrollUp({
+        scrollName: 'scrollUp',      // Element ID
+        scrollDistance: 300,         // Distance from top/bottom before showing element (px)
+        scrollFrom: 'top',           // 'top' or 'bottom'
+        scrollSpeed: 300,            // Speed back to top (ms)
+        easingType: 'linear',        // Scroll to top easing (see http://easings.net/)
+        animation: 'fade',           // Fade, slide, none
+        animationSpeed: 200,         // Animation speed (ms)
+        scrollTrigger: false,        // Set a custom triggering element. Can be an HTML string or jQuery object
+        scrollTarget: false,         // Set a custom target element for scrolling to. Can be element or number
+        scrollText: 'Scroll to top', // Text for element, can contain HTML
+        scrollTitle: false,          // Set a custom <a> title if required.
+        scrollImg: true,            // Set true to use image
+        activeOverlay: false,        // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+        zIndex: 2147483647           // Z-Index for the overlay
+    });
+});
+
+</script>
 
 <script>
 

@@ -1,5 +1,8 @@
 @media screen and (max-width: 768px) {
-  #ana-navbar {
+  #ust-rpnsb-navbar {
+    display: none; }
+
+  #alt-rpnsb-navbar {
     display: none; }
 
   #nav-responsive {
@@ -25,5 +28,8 @@
 
   .ft-bottom-info p {
     font-size: 1.1rem; } }
+@media screen and (min-width: 768px) {
+  #nav-responsive {
+    display: none; } }
 
 /*# sourceMappingURL=responsive.css.map */

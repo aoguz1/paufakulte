@@ -307,7 +307,7 @@ html{
     background-color: #fff;
     }
     
-    #alt-navbar{
+    .alt-navbar{
         background-color: #fff;
        box-shadow:  3px 3px 6px 3px #b8b7b7;
     }
@@ -771,14 +771,12 @@ border-top-right-radius: 7px;
         background-color: rgba(255, 251, 251, 0.4);
     
     #footer-logo{
-            
-            display: flex;
-            justify-content: center;
-            background-size:100% 100%;
-            background-image: url(../imgs/footer/uni-logo.png);
-            width: 75px;
-            height: 75px;
-            margin: -42px auto 15px;
+       display: flex;
+       justify-content: center;
+       width: 75px;
+       height: 75px;
+       margin: -42px auto 17px;
+           
     }
     
         background-image: url(../imgs/footer/9f481shutterstock_148710701-geometrik-desen-vektorel.png);
@@ -817,7 +815,7 @@ border-top-right-radius: 7px;
                         padding: 4px 0px;
                         a{
                             font-size: 1.25em;
-                            color: $gri-yazi;
+                            color: #212529;
                         }
 
                         
@@ -904,6 +902,8 @@ border-top-right-radius: 7px;
         
 
 }
+
+
 
 
 

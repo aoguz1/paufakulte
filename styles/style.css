@@ -161,7 +161,7 @@ html {
 #navbar-alt-menu {
   background-color: #fff; }
 
-#alt-navbar {
+.alt-navbar {
   background-color: #fff;
   box-shadow: 3px 3px 6px 3px #b8b7b7; }
 
@@ -419,11 +419,9 @@ html {
   #footer #footer-logo {
     display: flex;
     justify-content: center;
-    background-size: 100% 100%;
-    background-image: url(../imgs/footer/uni-logo.png);
     width: 75px;
     height: 75px;
-    margin: -42px auto 15px; }
+    margin: -42px auto 17px; }
 
 .container .row .col-md-3 {
   text-align: left; }
@@ -438,7 +436,7 @@ html {
       padding: 4px 0px; }
       .container .row .col-md-3 .footer-alt-item ul li a {
         font-size: 1.25em;
-        color: #424242; }
+        color: #212529; }
 .container .row .col-xs-6 {
   max-width: 50%; }
 .container .ft-line {

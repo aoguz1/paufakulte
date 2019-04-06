@@ -1,8 +1,13 @@
 @media screen and (max-width:768px){
 
-     #ana-navbar{
+     #ust-rpnsb-navbar{
          display: none
      }
+     #alt-rpnsb-navbar{
+         
+         display: none;       
+     }
+
      #nav-responsive{
          display: block;
      }
@@ -40,4 +45,9 @@
         }
      }
 
+}
+@media screen and (min-width:768px){
+    #nav-responsive{
+        display: none;
+    }
 }
