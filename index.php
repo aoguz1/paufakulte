@@ -203,17 +203,60 @@
                               <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                               <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                               <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                              <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                              <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
                             </ol>
                             <div class="carousel-inner ">
                               <div class="carousel-item active">
-                                <img style="width:1140px  "  src="imgs/header/xl_34a8d439-7b4b-4bb3-8bd9-7fc9308fe65a.jpg" class="d-block w-100" alt="...">
+                                <img src="imgs/header/xl_34a8d439-7b4b-4bb3-8bd9-7fc9308fe65a.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption">
+                                    <div class="container">
+                                        <a href="#">
+                                            <h4>Lorem ipsum dolor sit amet.</h4>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                              <div class="carousel-item">
+                                <img src="http://haber.pau.edu.tr/Content/newsimg/pau-bahar-etkinlikleri-basliyor//xl_725967b0-8a1e-45ab-90e8-e8703fef7d58.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption">
+                                        <div class="container">
+                                            <a href="#">
+                                                <h4>Lorem ipsum dolor sit amet.</h4>
+                                            </a>
+                                        </div>
+                                    </div>
+                            </div>
+                              <div class="carousel-item">
+                                <img src="http://www.pau.edu.tr/themes/pau2017/imgs/05.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption">
+                                        <div class="container">
+                                            <a href="#">
+                                                <h4>Lorem ipsum dolor sit amet.</h4>
+                                            </a>
+                                        </div>
+                                    </div>
+                            </div>
+                              <div class="carousel-item">
+                                <img src="http://www.pau.edu.tr/themes/pau2017/imgs/01.jpg" class="d-block w-100" alt="...">
                               </div>
                               <div class="carousel-item">
-                                <img src="imgs/header/xl_34a8d439-7b4b-4bb3-8bd9-7fc9308fe65a.jpg" class="d-block w-100" alt="...">
-                              </div>
-                              <div class="carousel-item">
-                                <img src="imgs/header/xl_34a8d439-7b4b-4bb3-8bd9-7fc9308fe65a.jpg" class="d-block w-100" alt="...">
-                              </div>
+                                <img src="http://www.pau.edu.tr/themes/pau2017/imgs/00.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption">
+                                        <div class="container">
+                                            <a href="#">
+                                                <h4>Lorem ipsum dolor sit amet.</h4>
+                                            </a>
+                                        </div>
+                                    </div>  
+                            </div>  
+
+
+                              
+
+
+                              
                             </div>
                             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                               <span class="carousel-control-prev-icon" aria-hidden="true"></span>

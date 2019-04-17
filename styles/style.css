@@ -171,6 +171,21 @@ html {
 .carousel-inner {
   box-shadow: 5px 8px 10px 0 rgba(0, 0, 0, 0.16);
   border-radius: 5px; }
+  .carousel-inner .carousel-item {
+    height: 474.73px;
+    width: 100%;
+    background-image: url("/imgs/header/headlineNewsWrapper.png");
+    background-position: bottom;
+    background-repeat: repeat-x; }
+    .carousel-inner .carousel-item img {
+      z-index: -5;
+      position: inherit;
+      height: 100%;
+      width: 100%;
+      margin: auto auto;
+      max-height: 474.74px; }
+    .carousel-inner .carousel-item .carousel-caption .container a h4 {
+      color: #fff; }
 
 #menu .container .col-md-2 {
   max-width: 14.666667%; }
@@ -307,6 +322,7 @@ html {
     .etkinlikler ul li {
       overflow: hidden; }
       .etkinlikler ul li .tarih {
+        position: relative;
         padding-left: 5px;
         float: left;
         font-size: 20px;
@@ -315,12 +331,13 @@ html {
         text-align: center; }
         .etkinlikler ul li .tarih::before {
           content: "19'";
-          font-size: 16px;
+          font-size: 31px;
           position: absolute;
-          left: 70px;
+          top: 10px;
+          left: 17px;
           color: #004684;
           margin: auto auto;
-          opacity: 0.6; }
+          opacity: 0.32; }
         .etkinlikler ul li .tarih .tarih-gun {
           margin: 0; }
       .etkinlikler ul li .aciklama-icerik {

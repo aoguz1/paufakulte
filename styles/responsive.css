@@ -25,6 +25,11 @@
 
   .carousel-inner {
     border-radius: 0px; }
+    .carousel-inner .carousel-item {
+      height: 275px; }
+      .carousel-inner .carousel-item img {
+        margin: auto auto;
+        height: 275px; }
 
   .ft-bottom-info p {
     font-size: 1.1rem; } }
