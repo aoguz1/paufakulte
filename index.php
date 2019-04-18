@@ -240,7 +240,14 @@
                             </div>
                               <div class="carousel-item">
                                 <img src="http://www.pau.edu.tr/themes/pau2017/imgs/01.jpg" class="d-block w-100" alt="...">
-                              </div>
+                                <div class="carousel-caption">
+                                        <div class="container">
+                                            <a href="#">
+                                                <h4>Lorem ipsum dolor sit amet.</h4>
+                                            </a>
+                                        </div>
+                                    </div>
+                            </div>
                               <div class="carousel-item">
                                 <img src="http://www.pau.edu.tr/themes/pau2017/imgs/00.jpg" class="d-block w-100" alt="...">
                                 <div class="carousel-caption">

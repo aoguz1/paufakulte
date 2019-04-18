@@ -329,14 +329,16 @@ html{
 .carousel-inner{
     box-shadow: 5px 8px 10px 0 rgba(0, 0, 0, 0.16);
     border-radius:5px; 
-
+    
     .carousel-item{
        
         height: 474.73px;
         width: 100%;
+    
         background-image: url("/imgs/header/headlineNewsWrapper.png");
         background-position: bottom;
         background-repeat: repeat-x;
+        
 
         img{
             z-index: -5;
@@ -353,6 +355,8 @@ html{
             .container{
                 a{
                     h4{
+                       
+                        text-shadow: 2px 2px rgba(0,0,0,0.85);
                         color:#fff;
                     }
                 }
@@ -891,7 +895,7 @@ border-top-right-radius: 7px;
 #footer-icerik{
     
         .col-md-3,.col-xs-6{
-            padding: 0px 5px;
+            padding: 0px 15px;
         }
     
 }
