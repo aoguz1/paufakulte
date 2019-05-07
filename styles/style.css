@@ -19,7 +19,7 @@ html {
   padding-right: 3%; }
 
 .nav-ust {
-  padding-bottom: 1rem; }
+  margin-top: 5px; }
 
 .nav-ust-sol {
   float: left; }
@@ -540,10 +540,11 @@ html {
 .container .row .col-md-3 .aciklama-sol-menu .aciklama-b-icerik {
   padding-top: 10px; }
   .container .row .col-md-3 .aciklama-sol-menu .aciklama-b-icerik ul {
-    padding: 0;
-    padding-left: 10px; }
+    padding: 0; }
     .container .row .col-md-3 .aciklama-sol-menu .aciklama-b-icerik ul li {
-      padding: 8px 0px; }
+      transition: cubic-bezier(0.165, 0.84, 0.44, 1) 500ms;
+      padding: 8px 0px;
+      padding-left: 8px; }
       .container .row .col-md-3 .aciklama-sol-menu .aciklama-b-icerik ul li .aciklama-b-butun {
         padding-top: 5px; }
         .container .row .col-md-3 .aciklama-sol-menu .aciklama-b-icerik ul li .aciklama-b-butun i {
@@ -554,6 +555,13 @@ html {
           font-weight: 600;
           font-size: 1.3rem;
           color: #424242; }
+      .container .row .col-md-3 .aciklama-sol-menu .aciklama-b-icerik ul li:hover {
+        background-color: #004684; }
+        .container .row .col-md-3 .aciklama-sol-menu .aciklama-b-icerik ul li:hover .aciklama-b-butun i {
+          color: #fff; }
+        .container .row .col-md-3 .aciklama-sol-menu .aciklama-b-icerik ul li:hover .aciklama-b-butun .aciklama-content a {
+          color: #fff;
+          text-decoration: none; }
   .container .row .col-md-3 .aciklama-sol-menu .aciklama-b-icerik i {
     float: left; }
 .container .row .col-md-9 .ekli-belgeler .card .card-header {

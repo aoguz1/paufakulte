@@ -40,9 +40,9 @@ html{
     }
     
     .nav-ust{
-        
+        margin-top: 5px;
        // padding: 1rem 0;
-        padding-bottom: 1rem;
+        
     }
     
     .nav-ust-sol{
@@ -1034,11 +1034,12 @@ border-top-right-radius: 7px;
                 padding-top: 10px;
                 ul{
                     padding: 0;
-                    padding-left: 10px;
+                    
 
 
                     li{
-                        padding: 8px 0px;
+                        transition: cubic-bezier(0.165, 0.84, 0.44, 1) 500ms;                        padding: 8px 0px;
+                        padding-left: 8px;
                         .aciklama-b-butun{
                             padding-top: 5px;
                             
@@ -1060,6 +1061,23 @@ border-top-right-radius: 7px;
 
                         }
                       
+
+                        &:hover{
+                            background-color: $uni-logo-mavi;
+                            .aciklama-b-butun{
+                                i{
+                                    color: #fff;
+                                }
+                                .aciklama-content{
+                                    a{
+                                        color: #fff;
+                                        text-decoration: none;
+                                    }
+                                }
+
+                            }
+
+                        }
                     }
                 }
 
@@ -1111,6 +1129,8 @@ border-top-right-radius: 7px;
     }
 
 }
+
+
 
 
 
