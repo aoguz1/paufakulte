@@ -30,6 +30,11 @@
       .carousel-inner .carousel-item img {
         margin: auto auto;
         height: 275px; }
+      .carousel-inner .carousel-item .carousel-caption {
+        bottom: 0; }
+
+  .carousel-indicators {
+    display: none; }
 
   .ft-bottom-info p {
     font-size: 1.1rem; } }

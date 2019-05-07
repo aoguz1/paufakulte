@@ -31,116 +31,154 @@ html{
     margin: auto;
     text-align: center;
 }
-// NAVBAR
 
 
     // üst logolu navbar
-.nav-padding{
-    padding-left: 7%;
-    padding-right: 3%;
-}
-
-.nav-ust{
+    .nav-padding{
+        padding-left: 7%;
+        padding-right: 3%;
+    }
     
-    padding: 1rem 0;
+    .nav-ust{
+        
+       // padding: 1rem 0;
+        padding-bottom: 1rem;
+    }
     
-}
-
-.nav-ust-sol{
-    float: left;
-}
-
-.nav-ust-sol{
-    
-    .nav-yazi{
-        position: relative;
-        top: 12%;
+    .nav-ust-sol{
         float: left;
-        
     }
     
-    .nav-uni-isim{
-        font-size: 180%;
-        padding-left: 58px;
-        font-weight: $semibold;
+    .nav-ust-sol{
+    
+        .row{
+            .col-md-1
+            {
+                .fakulte-resim{
+                    
+                    box-shadow: 1px 1px 15px #ffffff;
+                    box-shadow: 2px 2px 6px 6px rgba(255, 255, 255, 0.29);
+                    background-color: #fff;
+                    display: inline-block;
+                    padding-bottom: 4px;
+                    border-bottom-left-radius: 20px;
+                    border-bottom-right-radius: 20px;
+    
+    
+    
+                    img{
+                        margin: 0px 10px;
+                    }
+                }
+            }
+    
+            .col-md-10
+            {
+                padding-left: 83px;
+                display: flex;
+                align-items: center;
+    
+                .nav-yazi{
+                    
+                    float: left;
+                    
+                    
+                    .nav-uni-isim{
+                        font-size: 1.9rem;
+                        color: black;
+                        font-weight: $semibold;
+                        
+                    }
+                    .nav-fakulte-isim{
+                        font-size: 1.65rem;
+                       
+                        color: $uni-logo-mavi;
+                    }
+    
+                }
+                
+               
+            }
+    
+        
         
     }
-    .nav-fakulte-isim{
-        font-size: 1.6rem;
-        padding-left: 45px;
-        color: #004684;
     }
-}
-.fakulte-logo{
-    width: 46px;
-    height: auto;
-    float: left;
-}
-
-
-.nav-ust-sag{
-    .ust-bilgi{
-        overflow: auto;
-        padding: 10px 0px; 
-        
-        a{
-            box-sizing: content-box;            
-            margin-left: 10px;
-            font-size: 1.4rem;
-            color: $uni-logo-mavi;
+    .fakulte-logo{
+        width: 100px;
+        height: 100px !important;
+        height: auto;
+        float: left;
+    }
+    
+    
+    .nav-ust-sag{
+        margin: 0;
+        .ust-bilgi{
             overflow: auto;
-            transition: padding 300ms;
-
-            i{
-                font-size: 2.3rem;
+            padding: 10px 0px; 
+            
+            a{
+                box-sizing: content-box;            
+                margin-left: 10px;
+                font-size: 1.4rem;
+                color: black;
+                overflow: auto;
+                transition: padding 300ms;
+    
+                i{
+                    font-size: 2.3rem;
+                    
+                }
+    
+               span{
+                   font-size: 1.4rem;
+                   
+               }
                 
             }
-
-           span{
-               font-size: 1.4rem;
-           }
+            a:hover{
+                box-sizing: content-box;
+                background-color:$uni-logo-acikMavi;
+                color:#fff;
+                text-decoration: none;
+                padding: 0px 20px;
+                border-radius: 10px;
+    
+                i:hover{
+                  color: #fff;  
+                }
+    
+    
+                span:hover{
+                    color: #fff;
+                }
+            }
             
         }
-        a:hover{
-            box-sizing: content-box;
-            background-color:$uni-logo-acikMavi;
-            color:#fff;
-            text-decoration: none;
-            padding: 0px 20px;
-            border-radius: 10px;
-
-            i:hover{
-              color: #fff;  
-            }
-
-
-            span:hover{
-                color: #fff;
+     
+    
+     }
+    
+    .nav-ust-sag{
+        float: right;
+        a{
+            float: right;;
+            span{
+                
+                font-size: 1.2rem;
+                color: black;
             }
         }
-        
     }
-}
-
-.nav-ust-sag{
-    float: right;
-    a{
-        float: right;;
-        span{
+        // alt logolu navbar
+       
+    
+        .cerceve{
+            box-shadow: 3px 3px 6px 3px rgb(184, 183, 183); 
+                                                                                                    
             
-            font-size: 1.2rem;
-            color: $uni-logo-mavi;
         }
-    }
-}
-    // alt logolu navbar
-   
-
-    .cerceve{
-        box-shadow: 3px 3px 6px 3px rgb(184, 183, 183); 
-                                                                                                
-        
-    }
    
    // yeni navbar
 
@@ -334,11 +372,11 @@ html{
        
         height: 474.73px;
         width: 100%;
-    
-        background-image: url("/imgs/header/headlineNewsWrapper.png");
+        background: rgb(0,0,0);
+        background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 27%);
         background-position: bottom;
         background-repeat: repeat-x;
-        
+      
 
         img{
             z-index: -5;
@@ -939,6 +977,140 @@ border-top-right-radius: 7px;
 
 }
 
+.fixed.dopen{
+    display: block;
+}
+
+.fixed{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: auto;
+    z-index: 1030;
+    padding: 50px;
+    display: none;
+}
+
+
+// ALT SAYFA
+
+.container{
+
+
+    .row{
+        
+
+        .col-md-3{
+
+
+            .aciklama-sol-menu{
+               
+               
+                
+            
+
+            .aciklama-b-baslik{
+                border-top-left-radius: 7px;
+                border-top-right-radius: 7px;
+                background-color: #eeeded;
+                
+                line-height: 40px;
+
+                i{
+                    margin: 0px 10px;
+                    font-size: 2rem;
+                }
+                span{
+                    font-size: 1.4rem;
+                    font-weight: 600;
+                }
+
+            }
+
+
+
+            .aciklama-b-icerik{
+               
+                padding-top: 10px;
+                ul{
+                    padding: 0;
+                    padding-left: 10px;
+
+
+                    li{
+                        padding: 8px 0px;
+                        .aciklama-b-butun{
+                            padding-top: 5px;
+                            
+                            i{
+
+                                padding-right: 8px;
+                                font-size: 2rem;
+                                color: $uni-logo-mavi;
+                            }
+
+                            .aciklama-content{
+                                a{
+                                    font-weight: 600;
+                                    font-size: 1.3rem;
+                                    color: $gri-yazi;
+                                }
+                            }
+                            
+
+                        }
+                      
+                    }
+                }
+
+                i{
+                    float: left;
+                }
+            }
+          }
+        }
+
+        .col-md-9{
+
+            .aciklama-icerik-content{
+
+
+
+            }
+
+            .ekli-belgeler{
+                .card{
+                    .card-header{
+                        font-size: 1.6rem;
+                        font-weight: 600;
+                    }
+                    .card-body{
+                        .card-title{
+                            font-weight: 500;
+                            font-size: 1.5rem;
+                        }
+
+                        .card-text{
+                            font-size: 1.4rem;
+                        }
+
+                    }
+                }
+               
+
+            }
+
+
+
+        }
+    }
+
+
+    .alt-sayfa{
+        margin-top: 50px;
+    }
+
+}
 
 
 

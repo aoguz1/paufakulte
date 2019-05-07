@@ -47,10 +47,18 @@
                 margin: auto auto;
                 height: 275px;
             }
-        
+
+
+            .carousel-caption{
+                bottom:0;
+            }
+           
          }
      }
 
+     .carousel-indicators{
+        display: none;
+    }
 
      .ft-bottom-info{
         p{

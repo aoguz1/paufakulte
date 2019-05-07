@@ -19,54 +19,68 @@ html {
   padding-right: 3%; }
 
 .nav-ust {
-  padding: 1rem 0; }
+  padding-bottom: 1rem; }
 
 .nav-ust-sol {
   float: left; }
 
-.nav-ust-sol .nav-yazi {
-  position: relative;
-  top: 12%;
-  float: left; }
-.nav-ust-sol .nav-uni-isim {
-  font-size: 180%;
-  padding-left: 58px;
-  font-weight: 600; }
-.nav-ust-sol .nav-fakulte-isim {
-  font-size: 1.6rem;
-  padding-left: 45px;
-  color: #004684; }
+.nav-ust-sol .row .col-md-1 .fakulte-resim {
+  box-shadow: 1px 1px 15px #ffffff;
+  box-shadow: 2px 2px 6px 6px rgba(255, 255, 255, 0.29);
+  background-color: #fff;
+  display: inline-block;
+  padding-bottom: 4px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px; }
+  .nav-ust-sol .row .col-md-1 .fakulte-resim img {
+    margin: 0px 10px; }
+.nav-ust-sol .row .col-md-10 {
+  padding-left: 83px;
+  display: flex;
+  align-items: center; }
+  .nav-ust-sol .row .col-md-10 .nav-yazi {
+    float: left; }
+    .nav-ust-sol .row .col-md-10 .nav-yazi .nav-uni-isim {
+      font-size: 1.9rem;
+      color: black;
+      font-weight: 600; }
+    .nav-ust-sol .row .col-md-10 .nav-yazi .nav-fakulte-isim {
+      font-size: 1.65rem;
+      color: #004684; }
 
 .fakulte-logo {
-  width: 46px;
+  width: 100px;
+  height: 100px !important;
   height: auto;
   float: left; }
 
-.nav-ust-sag .ust-bilgi {
-  overflow: auto;
-  padding: 10px 0px; }
-  .nav-ust-sag .ust-bilgi a {
-    box-sizing: content-box;
-    margin-left: 10px;
-    font-size: 1.4rem;
-    color: #004684;
+.nav-ust-sag {
+  margin: 0; }
+  .nav-ust-sag .ust-bilgi {
     overflow: auto;
-    transition: padding 300ms; }
-    .nav-ust-sag .ust-bilgi a i {
-      font-size: 2.3rem; }
-    .nav-ust-sag .ust-bilgi a span {
-      font-size: 1.4rem; }
-  .nav-ust-sag .ust-bilgi a:hover {
-    box-sizing: content-box;
-    background-color: #007CC2;
-    color: #fff;
-    text-decoration: none;
-    padding: 0px 20px;
-    border-radius: 10px; }
-    .nav-ust-sag .ust-bilgi a:hover i:hover {
-      color: #fff; }
-    .nav-ust-sag .ust-bilgi a:hover span:hover {
-      color: #fff; }
+    padding: 10px 0px; }
+    .nav-ust-sag .ust-bilgi a {
+      box-sizing: content-box;
+      margin-left: 10px;
+      font-size: 1.4rem;
+      color: black;
+      overflow: auto;
+      transition: padding 300ms; }
+      .nav-ust-sag .ust-bilgi a i {
+        font-size: 2.3rem; }
+      .nav-ust-sag .ust-bilgi a span {
+        font-size: 1.4rem; }
+    .nav-ust-sag .ust-bilgi a:hover {
+      box-sizing: content-box;
+      background-color: #007CC2;
+      color: #fff;
+      text-decoration: none;
+      padding: 0px 20px;
+      border-radius: 10px; }
+      .nav-ust-sag .ust-bilgi a:hover i:hover {
+        color: #fff; }
+      .nav-ust-sag .ust-bilgi a:hover span:hover {
+        color: #fff; }
 
 .nav-ust-sag {
   float: right; }
@@ -74,7 +88,7 @@ html {
     float: right; }
     .nav-ust-sag a span {
       font-size: 1.2rem;
-      color: #004684; }
+      color: black; }
 
 .cerceve {
   box-shadow: 3px 3px 6px 3px #b8b7b7; }
@@ -174,7 +188,8 @@ html {
   .carousel-inner .carousel-item {
     height: 474.73px;
     width: 100%;
-    background-image: url("/imgs/header/headlineNewsWrapper.png");
+    background: black;
+    background: linear-gradient(0deg, black 0%, rgba(255, 255, 255, 0) 27%);
     background-position: bottom;
     background-repeat: repeat-x; }
     .carousel-inner .carousel-item img {
@@ -498,5 +513,58 @@ html {
 #sosyal-medya .icon-ytb:hover {
   text-decoration: none;
   color: #FF0000; }
+
+.fixed.dopen {
+  display: block; }
+
+.fixed {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: auto;
+  z-index: 1030;
+  padding: 50px;
+  display: none; }
+
+.container .row .col-md-3 .aciklama-sol-menu .aciklama-b-baslik {
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  background-color: #eeeded;
+  line-height: 40px; }
+  .container .row .col-md-3 .aciklama-sol-menu .aciklama-b-baslik i {
+    margin: 0px 10px;
+    font-size: 2rem; }
+  .container .row .col-md-3 .aciklama-sol-menu .aciklama-b-baslik span {
+    font-size: 1.4rem;
+    font-weight: 600; }
+.container .row .col-md-3 .aciklama-sol-menu .aciklama-b-icerik {
+  padding-top: 10px; }
+  .container .row .col-md-3 .aciklama-sol-menu .aciklama-b-icerik ul {
+    padding: 0;
+    padding-left: 10px; }
+    .container .row .col-md-3 .aciklama-sol-menu .aciklama-b-icerik ul li {
+      padding: 8px 0px; }
+      .container .row .col-md-3 .aciklama-sol-menu .aciklama-b-icerik ul li .aciklama-b-butun {
+        padding-top: 5px; }
+        .container .row .col-md-3 .aciklama-sol-menu .aciklama-b-icerik ul li .aciklama-b-butun i {
+          padding-right: 8px;
+          font-size: 2rem;
+          color: #004684; }
+        .container .row .col-md-3 .aciklama-sol-menu .aciklama-b-icerik ul li .aciklama-b-butun .aciklama-content a {
+          font-weight: 600;
+          font-size: 1.3rem;
+          color: #424242; }
+  .container .row .col-md-3 .aciklama-sol-menu .aciklama-b-icerik i {
+    float: left; }
+.container .row .col-md-9 .ekli-belgeler .card .card-header {
+  font-size: 1.6rem;
+  font-weight: 600; }
+.container .row .col-md-9 .ekli-belgeler .card .card-body .card-title {
+  font-weight: 500;
+  font-size: 1.5rem; }
+.container .row .col-md-9 .ekli-belgeler .card .card-body .card-text {
+  font-size: 1.4rem; }
+.container .alt-sayfa {
+  margin-top: 50px; }
 
 /*# sourceMappingURL=style.css.map */
